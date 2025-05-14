@@ -1,0 +1,602 @@
+
+@font-face {
+    font-family: 'Mazda Type Cyrillic';
+    src: url(./font/MazdaTypeCyrillic-Medium.woff2);
+    font-weight: 500;
+    font-style: normal;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Mazda Type Cyrillic';
+    background-color: #101010;
+}
+.meny {
+    display: flex;
+    justify-content: center;
+    background-color: #101010;
+    height: 80px;
+    margin-left: -10px;
+    margin-top: -8px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1905px;
+}
+.nav-meny {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.logo {
+    width: 67px;
+    height: 55px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+    margin-top: 14px;
+    margin-left: 155px;
+    }
+.main-nav li{
+    display: inline;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+    }
+.main-nav li:first-child, #main-nav ul li {
+    border-left: none;
+    }
+.main-nav ul {
+    display: none;
+    position: absolute;
+    top: 19px;
+    left: 0;
+    z-index: 1;
+    width: 155px;
+    }
+.main-nav li a, .main-nav li ul li a{
+    color: #c7c7c7;
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    padding-bottom: 17px;
+    }
+.main-nav li a:hover, 
+.main-nav li ul a:hover {
+    color: rgb(255, 255, 255);
+    }
+        .button {
+            font-family: 'Mazda Type Cyrillic';
+            font-size: 1em;
+            background-color: #101010;
+            border: none;
+        }
+        dialog:not([open]) {
+            display: none;
+          }
+          #myDialog {
+            background: none;
+            border: none;
+            padding-right: 0px;
+          }
+          .dialog {
+            display: flex;
+            border: none;
+            width: 100vw;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+          }
+          .pp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+          }
+          .pp img {
+            width: 70%;
+          }
+          #pa {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            color: #101010;
+            margin: 0;
+            padding: 0;
+          }
+.hero {
+    max-width: 200vw;
+    width: 100vw;
+    margin-left: -8px;
+    background-image: url(./img/v3.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    /* background-position: bottom; */
+    background-position: -85px;
+    background-position-y: -280px;
+    height: 1049px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.MAZDA-MOTOR {
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+.MAZDA-MOTOR h1 {
+    font-size: 48pt;
+}
+.MAZDA-MOTOR p {
+    font-size: 40pt;
+}
+.button1 {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 24pt;
+    color: white;
+    background-color: rgba(1, 1, 1, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-bottom: 150px;
+}
+.button1:hover {
+    border-color: #790202;
+    transform: scale(1.05);
+    color: #c7c7c7;
+}
+.hr1 {
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.hero2 {
+    max-width: 1920px;
+    width: 100vw;
+    background-image: url(./img/1800x900\ -uzk_1551942857156671043_hud266c92ee56d88fc2fb01da05105717f_0_1920x0_resize_q80_lanczos.jpg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: center;
+    height: 502px;
+
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
+.MZD-OIL {
+    padding-top: 20px;
+    display: inline-block;
+    text-align: center;
+
+}
+.MZD-OIL h1 {
+    font-size: 48pt;
+}
+.MZD-OIL p {
+    font-size: 40pt;
+}
+.hr2 {
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.hero-mazda-6 {
+    max-width: 1920px;
+    width: 100vw;
+    background-image: url(./img/\(1\)84724aa65b5e9163f85f723fb97a4a4a.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 1050px;
+}
+.hero-mazda-6 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
+.mazda-6 {
+    display: inline-block;
+    text-align: center;
+    padding-top: 80px;
+}
+.mazda-6 h1 {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 48pt;
+}
+.mazda-6 p {
+    font-family: 'Mazda Type Cyrillic';
+}
+.hr3 {
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.mazda-6 .nazvanie {
+    padding-top: 45px;
+}
+.mazda-6 p {
+    font-size: 28pt;
+}
+.bottom-element {
+    position: absolute;
+    bottom: 0; /* Прижимаем к низу */
+    left: 0;
+    width: 100%;
+}
+.hr4 {
+    width: 25.5%;
+    margin: 0 37% 0 37%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.hero-mazda-CX-5 {
+    max-width: 1920px;
+    width: 100vw;
+    background-image: url(./img/\(2\)cx5_ipm5_hero_1800x900-1.png);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-position: bottom;
+    height: 1050px;
+}
+.hero-mazda-CX-5 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
+.hero-mazda-CX-9 {
+    max-width: 1920px;
+    width: 100vw;
+    background-image: url(./img/\(3\)05809835bcafff16b90af82de906e1b4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 1050px;
+}
+.hero-mazda-CX-9 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    color: white;
+}
+.hr5 {
+    width: 35%;
+    margin: 0 40% 0 32.5%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+.hr6 {
+    width: 35%;
+    margin: 0 40% 0 32.5%;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border: none;
+}
+
+
+
+
+.test-drive-btn {
+    font-family: 'Mazda Type Cyrillic';
+    background-color: #101010;
+    color: #c7c7c7;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+.test-drive-btn:hover {
+    color: white;
+
+
+}
+
+
+footer {
+    font-family: 'Mazda Type Cyrillic';
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #101010;
+}
+.footer-info {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.footer-info h3 {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.back {
+    padding-left: 50px;
+    text-align: left;
+    color: #c7c7c7;
+}
+
+.footer-info ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-info li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.footer-info a {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 1em;
+}
+.footer-info a:hover {
+    color: white;
+}
+.footer-info2 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 70px;
+}
+.footer-info2 h3 {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.footer-info2 ul {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-info2 li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.footer-info2 a {
+    text-decoration: none;
+    color: #c7c7c7;
+    font-size: 1em;
+}
+.footer-info2 a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.order-button2 {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 24pt;
+    color: white;
+    background-color: rgba(1, 1, 1, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-bottom: 150px;
+}
+
+.order-button2:hover {
+    border-color: #790202;
+    transform: scale(1.05);
+    color: #c7c7c7;
+}
+
+.order-button3 {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 24pt;
+    color: white;
+    background-color: rgba(1, 1, 1, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-bottom: 150px;
+}
+
+.order-button3:hover {
+    border-color: #790202;
+    transform: scale(1.05);
+    color: #c7c7c7;
+}
+
+.order-button4 {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 24pt;
+    color: white;
+    background-color: rgba(1, 1, 1, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-bottom: 150px;
+}
+
+.order-button4:hover {
+    border-color: #790202;
+    transform: scale(1.05);
+    color: #c7c7c7;
+}
+
+.tdheader {
+    display: flex;
+    align-items: center;
+}
+
+.tdheader a {
+    text-decoration: none;
+}
+
+.tdheader p:hover {
+    color: white;
+}
+
+.tdheader h1 {
+    text-align: center;
+    color: white;
+    padding-left: 686px;
+    margin: 20px 20px 20px 20px;
+}
+
+.tdheader2 {
+    display: flex;
+    align-items: center;
+}
+
+.tdheader2 a {
+    text-decoration: none;
+}
+
+.tdheader2 p:hover {
+    color: white;
+}
+
+.tdheader2 h1 {
+    text-align: center;
+    color: white;
+    padding-left: 755px;
+    margin: 20px 20px 20px 20px;
+}
+
+.tdform {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+}
+
+input {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 11pt;
+    height: 20px;
+    border: 1px solid  black;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+textarea {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 11pt;
+
+    border: 1px solid  black;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+.td {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 600px;
+}
+
+.tdfirst {
+    margin: 20px 100px 10px 100px;
+}
+
+.in {
+    margin: 10px 100px 10px 100px;
+}
+
+.td textarea {
+    margin: 10px 100px 10px 100px;
+}
+
+.bbt {
+    padding-left: 45px;
+}
+
+.td button {
+    font-family: 'Mazda Type Cyrillic';
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+    margin: 10px 200px 5px 200px;
+}
+
+.db225 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.db225 hr {
+    width: 21%;
+    height: 2px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+::placeholder {
+    color: #101010;
+    padding-left: 2px;
+}
+
+.td button:hover {
+    border-color: #790202;
+    transform: scale(1.05);
+    color: #c7c7c7;
+}
+
+select {
+    font-family: 'Mazda Type Cyrillic';
+    font-size: 11pt;
+    height: 20px;
+    border: 1px solid  black;
+    box-shadow: 2px 2px 2px gainsboro;
+    background-color: white;
+}
+
+
+
+
+

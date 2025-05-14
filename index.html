@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="MazdaTypeCyrillic-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="./img/avb2fhrg4(1).png" type="image/x-icon">
+    <title>Mazda</title>
+</head>
+<body>
+    <header class="meny">
+        <div class="container">
+        <nav class="nav-meny">
+            <img class="logo" src="./img/avb2fhrg4(1).png" alt="logo">
+            <ul class="main-nav">
+                <li>
+                    <button class="button" type="button" onclick="window['myDialog'].show()">
+                        <a>Каталог автомобилей</a>
+                    </button>
+                </li>
+                <li>
+                    <a href="https://www.mazda.com/en/innovation/">Инновации</a>
+                </li>
+                <li>
+                    <a href="https://www.mazda.ru/parts/mzd/?_ga=2.20413304.1774593168.1743275852-1613640299.1741787342">Услуги</a>
+                </li>
+                <li>
+                    <a href="https://newsroom.mazda.com/en/?_ga=2.205395600.169882728.1743275882-228747054.1741787364">Новости и акции</a>
+                </li>
+                <li>
+                    <button id="openModalBtn" class="test-drive-btn"><a href="./form/form.html">Записаться на тест-драйв</a></button>
+                </li>
+                <li>
+                    <a id="aa" href="#section5">О компании</a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+            <dialog id="myDialog">
+                <div class="dialog">
+                    <div class="pp">
+                        <a id="pa" href="#section1">
+                            <img src="./img/131958028-82f2633c-87cd-4b68-9174-e650827ecb5f(55).png"></a>
+                        <p><a id="pa" href="#section1">MAZDA 6</a></p>
+                    </div>
+                    <div class="pp">
+                        <a id="pa" href="#section2">
+                        <img src="./img/cx-5-2020-blue.png"></a>
+                        <p><a id="pa" href="#section2">MAZDA CX-5</a></p>
+                    </div>
+                    <div class="pp">
+                        <a id="pa" href="#section3">
+                        <img src="./img/mcx9.png"></a>
+                        <p><a id="pa" href="#section3">MAZDA CX-9</a></p>
+                    </div>
+                </div>
+            </dialog>
+        <div class="hero">
+
+        <div class="MAZDA-MOTOR">
+            <h1>
+                MAZDA MOTOR CORPORATION
+            </h1>
+            <hr class="hr1">
+            <p>Представляет:<br>MAZDA CX-50 с гибридным мотором</p>
+            <a href="https://www.mazda.ru/cars/mazda-cx-50/">
+            <button class="button1" type="button">Подробнее</button>
+            </a>
+        </div>
+        </div>
+        <div class="hero2">
+            <div class="MZD-OIL">
+                <h1>
+                    ЛИНЕЙКА MZD OIL & PARTS
+                </h1>
+                <hr class="hr2">
+                <a href="https://www.mazda.ru/parts/mzd/?_ga=2.79001812.1774593168.1743275852-1613640299.1741787342">
+                <button class="button1" type="button">Подробнее</button>
+                </a>
+            </div>
+        </div>
+        <div class="hero-mazda-6">
+            <div class="mazda-6">
+                <h1 id="section1">
+                    Выбери своё будущее
+                </h1>
+                <hr class="hr3">
+                <div>
+                <p>
+                    MAZDA 6
+                </p>
+                <hr class="hr4">
+                </div>
+                <div class="bottom-element">
+                   <a href="./form/form6.html"><button class="order-button2" id="openModalBtn2">Заказать</button></a>
+                    <!-- Модальное окно
+    <div class="modal2" id="orderModal2">
+        <div class="modal-content2">
+            <span class="close-btn2" id="closeModalBtn2">&times;</span>
+            <div class="modal-header2">
+                <img src="https://www.mazda.ru/contentassets/5f1a4a8b8c4a4c4e9e4a4a4a4a4a4a4/mazda6-sedan-exterior-01.jpg" alt="Mazda 6" class="car-image2">
+                <h2>Заказ MAZDA 6</h2>
+                <hr class="hr16">
+            </div>
+            <form id="orderForm2" action="process_order.php" method="POST">
+                <div class="form-group2">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                </div>
+                
+                <div class="form-group2">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                </div>
+                
+                <div class="form-group2">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                </div>
+                
+                <div class="form-group2">
+                    <label for="model2">Модель:</label>
+                    <select id="model" name="model" required>
+                        <option value="" disabled selected>Выберите модель</option>
+                        <option value="MAZDA 6 Sedan">MAZDA 6 Sedan</option>
+                        <option value="MAZDA 6 Wagon">MAZDA 6 Wagon</option>
+                        <option value="MAZDA 6 Sport">MAZDA 6 Sport</option>
+                    </select>
+                </div>
+                
+                <div class="form-group2">
+                    <label for="color">Цвет:</label>
+                    <select id="color" name="color" required>
+                        <option value="" disabled selected>Выберите цвет</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Черный">Черный</option>
+                        <option value="Белый">Белый</option>
+                        <option value="Серый">Серый</option>
+                        <option value="Синий">Синий</option>
+                    </select>
+                </div>
+                
+                <div class="form-group2">
+                    <label for="delivery">Способ получения:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="" disabled selected>Выберите способ</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Доставка">Доставка</option>
+                    </select>
+                </div>
+                
+                <div class="form-group2">
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Ваши пожелания..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group2">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                
+                <button type="submit2" class="submit-btn2">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    Уведомление об успешной отправке 
+    <div class="notification2" id="notification2">
+        <div class="notification-content2">
+            <i class="fas fa-check-circle2"></i>
+            <p>Ваша заявка успешно отправлена!</p>
+        </div>-->
+    </div>
+
+    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="hero-mazda-CX-5">
+            <div class="mazda-6">
+                <h1 id="section2">
+                    Выбери своё будущее
+                </h1>
+                <hr class="hr3">
+                <div>
+                <p>
+                    MAZDA CX-5
+                </p>
+                <hr class="hr5">
+                </div>
+                <div class="bottom-element">
+                    <a href="./form/form6.html"><button class="order-button3" id="openModalBtn3">Заказать</button></a>
+                                    <!-- Модальное окно 
+    <div class="modal3" id="orderModal3">
+        <div class="modal-content3">
+            <span class="close-btn3" id="closeModalBtn3">&times;</span>
+            <div class="modal-header3">
+                <img src="https://www.mazda.ru/contentassets/5f1a4a8b8c4a4c4e9e4a4a4a4a4a4a4/mazda6-sedan-exterior-01.jpg" alt="Mazda 6" class="car-image3">
+                <h2>Заказ MAZDA CX-5</h2>
+                <hr class="hr17">
+            </div>
+            <form id="orderForm3" action="process_order.php" method="POST">
+                <div class="form-group3">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                </div>
+                
+                <div class="form-group3">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                </div>
+                
+                <div class="form-group3">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                </div>
+                
+                <div class="form-group3">
+                    <label for="model3">Модель:</label>
+                    <select id="model" name="model" required>
+                        <option value="" disabled selected>Выберите модель</option>
+                        <option value="MAZDA 6 Sedan">MAZDA CX-5 Standart</option>
+                        <option value="MAZDA 6 Wagon">MAZDA CX-5 Max</option>
+                        <option value="MAZDA 6 Sport">MAZDA CX-5 Sport</option>
+                    </select>
+                </div>
+                
+                <div class="form-group3">
+                    <label for="color">Цвет:</label>
+                    <select id="color" name="color" required>
+                        <option value="" disabled selected>Выберите цвет</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Черный">Черный</option>
+                        <option value="Белый">Белый</option>
+                        <option value="Серый">Серый</option>
+                        <option value="Синий">Синий</option>
+                    </select>
+                </div>
+                
+                <div class="form-group3">
+                    <label for="delivery">Способ получения:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="" disabled selected>Выберите способ</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Доставка">Доставка</option>
+                    </select>
+                </div>
+                
+                <div class="form-group3">
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Ваши пожелания..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group3">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                
+                <button type="submit3" class="submit-btn3">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+     Уведомление об успешной отправке 
+    <div class="notification3" id="notification3">
+        <div class="notification-content3">
+            <i class="fas fa-check-circle3"></i>
+            <p>Ваша заявка успешно отправлена!</p>
+        </div>
+    </div>-->
+
+    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="hero-mazda-CX-9">
+            <div class="mazda-6">
+                <h1 id="section3">
+                    Выбери своё будущее
+                </h1>
+                <hr class="hr3">
+                <div>
+                <p>
+                    MAZDA CX-9
+                </p>
+                <hr class="hr6">
+                </div>
+                <div class="bottom-element">
+                    <a href="./form/form6.html"><button class="order-button4" id="openModalBtn4">Заказать</button></a>
+                </div>
+            </div>
+        </div>
+                                                    <!-- Модальное окно
+    <div class="modal4" id="orderModal4">
+        <div class="modal-content4">
+            <span class="close-btn4" id="closeModalBtn4">&times;</span>
+            <div class="modal-header4">
+                <img src="https://www.mazda.ru/contentassets/5f1a4a8b8c4a4c4e9e4a4a4a4a4a4a4/mazda6-sedan-exterior-01.jpg" alt="Mazda 6" class="car-image3">
+                <h2>Заказ MAZDA CX-9</h2>
+                <hr class="hr17">
+            </div>
+            <form id="orderForm4" action="process_order.php" method="POST">
+                <div class="form-group4">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                </div>
+                
+                <div class="form-group4">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                </div>
+                
+                <div class="form-group4">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                </div>
+                
+                <div class="form-group4">
+                    <label for="model4">Модель:</label>
+                    <select id="model" name="model" required>
+                        <option value="" disabled selected>Выберите модель</option>
+                        <option value="MAZDA 6 Sedan">MAZDA CX-9 Standart</option>
+                        <option value="MAZDA 6 Wagon">MAZDA CX-9 Max</option>
+                        <option value="MAZDA 6 Sport">MAZDA CX-9 Sport</option>
+                    </select>
+                </div>
+                
+                <div class="form-group4">
+                    <label for="color">Цвет:</label>
+                    <select id="color" name="color" required>
+                        <option value="" disabled selected>Выберите цвет</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Черный">Черный</option>
+                        <option value="Белый">Белый</option>
+                        <option value="Серый">Серый</option>
+                        <option value="Синий">Синий</option>
+                    </select>
+                </div>
+                
+                <div class="form-group4">
+                    <label for="delivery">Способ получения:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="" disabled selected>Выберите способ</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Доставка">Доставка</option>
+                    </select>
+                </div>
+                
+                <div class="form-group4">
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments" rows="3" placeholder="Ваши пожелания..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group4">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+                
+                <button type="submit4" class="submit-btn4">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    Уведомление об успешной отправке 
+    <div class="notification4" id="notification4">
+        <div class="notification-content4">
+            <i class="fas fa-check-circle4"></i>
+            <p>Ваша заявка успешно отправлена!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>-->
+                
+    <footer id="section5">
+        <div class="footer-info"><img class="logo" src="./img/avb2fhrg4(1).png" alt="logo">
+            <h3>О НАС</h3>
+            <hr>
+                <ul>
+                    <li><a href="https://www.mazda.com/en/experience/museum/">История</a></li>
+                    <li><a href="https://www.mazda.ru/forms/keep-me-informed/">Обратная связь</a></li>
+                    <li><a href="https://www.mazda.ru/contacts/">Контакты</a></li>
+                    <li><a href="https://www.mazda.ru/privacy-policy/">Правовая информация</a></li>
+                    <li><a href="https://www.mazda.ru/sout/">СОУТ</a></li>
+                </ul>
+        </div>
+        <div class="footer-info2">
+            <h3>СЛЕДИТЕ ЗА НАМИ</h3>
+            <hr>
+                <ul>
+                    <li><a href="https://vk.com/mazda?t2fs=ca95db875f81707b47_3">VK</a></li>
+                    <li><a href="https://www.youtube.com/user/themazdarussia/feed">YOUTUBE</a></li>
+                    <li><a href="https://ok.ru/mazda">OK</a></li>
+                    <li><a href="https://t.me/+shWPOvbZN_A5NTgy">TELEGRAM</a></li>
+                </ul>
+        </div>
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>
