@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Запись на тест-драйв</title>
+</head>
+<body>
+    <header class="tdheader">
+        <a href="../index.html"><p class="back">Назад</p></a>
+        <h1>Запись на тест-драйв</h1>
+   
+    </header>
+    <div class="tdform">
+        <form id="orderForm" class="td" action="./add.php" method="post">
+            <input class="tdfirst" type="text" name="name" id="name" placeholder="ФИО" required>
+            <input class="in" type="tel" name="tel" id="tel" placeholder="Телефон:" required>
+            <input class="in" type="email" id="email" name="email" placeholder="email" required>
+            <input class="in" type="date" id="data" name="data" required>
+            <textarea id="comment" name="comment" rows="3"></textarea>
+            <div class="bbt">
+            <button type="submit" class="submit-btn">Отправить заявку</button></div>
+        </form>
+    </div>
+    <script>
+        // Простая валидация формы
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            const requiredFields = this.querySelectorAll('[required]');
+            
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    isValid = false;
+                    field.style.borderColor = '#a00';
+                } else {
+                    field.style.borderColor = '#ddd';
+                }
+            });
+            
+            if (!isValid) {
+                event.preventDefault();
+                alert('Пожалуйста, заполните все обязательные поля!');
+            } else {
+                alert('Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
+                // В реальном проекте здесь был бы AJAX-запрос или другая обработка формы
+            }
+        });
+    </script>
+    <footer id="section5">
+        <div class="footer-info"><img class="logo" src="../img/avb2fhrg4(1).png" alt="logo">
+            <h3>О НАС</h3>
+            <hr>
+                <ul>
+                    <li><a href="https://www.mazda.com/en/experience/museum/">История</a></li>
+                    <li><a href="https://www.mazda.ru/forms/keep-me-informed/">Обратная связь</a></li>
+                    <li><a href="https://www.mazda.ru/contacts/">Контакты</a></li>
+                    <li><a href="https://www.mazda.ru/privacy-policy/">Правовая информация</a></li>
+                    <li><a href="https://www.mazda.ru/sout/">СОУТ</a></li>
+                </ul>
+        </div>
+        <div class="footer-info2">
+            <h3>СЛЕДИТЕ ЗА НАМИ</h3>
+            <hr>
+                <ul>
+                    <li><a href="https://vk.com/mazda?t2fs=ca95db875f81707b47_3">VK</a></li>
+                    <li><a href="https://www.youtube.com/user/themazdarussia/feed">YOUTUBE</a></li>
+                    <li><a href="https://ok.ru/mazda">OK</a></li>
+                    <li><a href="https://t.me/+shWPOvbZN_A5NTgy">TELEGRAM</a></li>
+                </ul>
+        </div>
+    </footer>
+</body>
+</html>
